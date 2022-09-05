@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+
+    
+}
+
+.password-container{
+    max-width: 550px; 
+    max-height: 550px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    width: 100%;
+}
+
+.title h1, .title h3{
+    color: #ffffff;
+}
+
+.title h1 span{
+    color: #4ADF86;
+}
+
+.title h3{
+    font-weight: 400;
+    color: #D5D4D8;
+}
+
+
+
+.generate-pwd{
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 35px
+}
+
+.generate-pwd button{
+    padding: 9px 17px 9px 15px;
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: none;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 4px 11px -1px rgba(16,185,129,0.73); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 4px 11px -1px rgba(16,185,129,0.73);
+    font-weight: 600;
+    color: #273549;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.generate-pwd button:hover{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.generate-pwd button:active{
+    opacity: 0.85;
+    transform: translateY(3px);
+    box-shadow: 5px 4px 11px -1px rgba(16,185,129,0.73);
+}
+
+.two-passwords{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.two-passwords button{
+    width: 200px;
+    height: 39px;
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 6px #2C415E;
+    color: #55F991;
+    cursor: pointer;
+}
+
+#first-password{
+    margin-right: 24px
+}
+
+#first-password, #second-password{
+    transition: all 0.2s ease-in-out;
+}
+
+#first-password:hover, #second-password:hover{
+    background: #2c415e;
+}
+
+#first-password:active, #second-password:active{
+    transform: translateY(3px);
+}
