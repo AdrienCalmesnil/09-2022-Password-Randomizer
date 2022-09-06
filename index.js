@@ -7,7 +7,7 @@ let secondPassword = document.getElementById('second-password')
 
 
 
-let passwordLength = 16
+let passwordLength = 15
 
 function getRandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length)

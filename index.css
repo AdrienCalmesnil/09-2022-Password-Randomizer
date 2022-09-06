@@ -28,6 +28,7 @@ body {
 
 .title h1, .title h3{
     color: #ffffff;
+    
 }
 
 .title h1 span{
@@ -38,8 +39,6 @@ body {
     font-weight: 400;
     color: #D5D4D8;
 }
-
-
 
 .generate-pwd{
     width: 100%;
@@ -60,6 +59,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+
 
 .generate-pwd button:hover{
     opacity: 0.85;
@@ -103,4 +103,50 @@ body {
 
 #first-password:active, #second-password:active{
     transform: translateY(3px);
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+    .title h1{
+        font-size: 3.5em; 
+    }
+    .title h3{
+        font-size: 2.2em;
+    }
+    .password-container{
+        width: 90%;
+        max-height: none;
+    }
+    .generate-pwd{
+        height: 80px;
+    }
+    .generate-pwd button{
+        width: 100%;
+        height: 100%;
+        font-size: 2.7em;
+    }
+    .two-passwords{
+        height: 100px;
+    }
+    
+    .two-passwords button{
+        height: 100% !important;
+        width: 100% !important;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .password-container{
+        max-width: none;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .two-passwords button{
+        font-size: 12px;
+    }
+    .title h1{
+        font-size: 1.6em;
+    }
 }
